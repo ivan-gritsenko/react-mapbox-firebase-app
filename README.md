@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# Project Mapbox+Firebase
+[DEMO LINK](https://react-mapbox-firebase-app.vercel.app/)
+## Overview
+This project is a web application built with React, Typescript, and Firebase. It allows users to interact with a map to place numbered quest markers, delete markers, and store marker data in Firebase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technical Stack
+- React
+- Typescript
+- Firebase
+- Mapbox
+- Vite
 
-Currently, two official plugins are available:
+## Features
+1. Display Map: The map is rendered using Mapbox.
+1. Add Numbered Quest Markers: Users can click on the map to place numbered quest markers at the clicked location.
+1. Delete Markers: Users can delete all markers at once or remove them individually.
+1. Store Marker Data: Marker data is stored in Firebase, including location, timestamp, and quest sequence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
+### Prerequisites
+- Node.js (v14 or later)
+- npm or yarn
+- Firebase account
+- Mapbox account
 
-## Expanding the ESLint configuration
+## Installation
+- Clone the repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+`git clone https://github.com/your-username/your-repo-name.git`
 
-- Configure the top-level `parserOptions` property like this:
+`cd your-repo-name`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+-  Install dependencies:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Copy code
+`npm install`
+
+- Start the development server:
+
+Copy code
+`npm run dev`
